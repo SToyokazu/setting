@@ -2,14 +2,7 @@ sudo apt-get update
 sudo apt-get upgrade
 
 #日本語削除マン
-mv $HOME/デスクトップ $HOME/Desktop
-mv $HOME/ダウンロード $HOME/Downloads
-mv $HOME/テンプレート $HOME/Templates
-mv $HOME/公開 $HOME/Share
-mv $HOME/ドキュメント $HOME/Documents
-mv $HOME/ミュージック $HOME/Music
-mv $HOME/ピクチャ $HOME/Pictures
-mv $HOME/ビデオ $HOME/Videos
+LANG=C xdg-user-dirs-gtk-update
 
 #vimをインストールし設定
 sudo apt-get install vim
