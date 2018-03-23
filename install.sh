@@ -4,8 +4,12 @@ sudo apt-get upgrade
 #日本語削除マン
 LANG=C xdg-user-dirs-gtk-update
 
+#g++をインストール
+sudo apt-get install g++
+
 #vimをインストールし設定
 sudo apt-get install vim
+sudo apt-get install vim-gtk
 sudo cp vimrc /usr/share/vim
 
 #chromeをインストール
