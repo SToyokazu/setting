@@ -31,10 +31,12 @@ cd ..
 #texをインストール
 sudo apt-add-repository ppa:texlive-backports/ppa
 sudo apt-get install texlive-lang-cjk
+sudo apt-get install texlive-full
 #texのjlisting.styを追加
 wget -v http://iij.dl.osdn.jp/mytexpert/26068/jlisting.sty.bz2
 bunzip2 jlisting.sty.bz2
-sudo cp jlisting.sty /usr/share/texlive/texmf-dist/tex/latex/listing
+sudo mkdir /usr/share/texlive/texmf-dist/tex/latex/jlisting
+sudo cp jlisting.sty /usr/share/texlive/texmf-dist/tex/latex/jlisting
 sudo mktexlsr
 
 sudo apt-get update
